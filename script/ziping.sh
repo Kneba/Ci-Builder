@@ -55,7 +55,7 @@ echo -e \
 <b>📕 MD5 :-</b> <code>"$(md5sum *zip | cut -d' ' -f1)"</code>
 <b>📘 SHA1 :-</b> <code>"$(sha1sum *zip | cut -d' ' -f1)"</code>
 ━━━━━━━━━ஜ۩۞۩ஜ━━━━━━━━
-<b>🙇 Maintainer: </b> <a href="https://github.com/Kneba">Kneba</a>
+<b>🙇 Maintainer: "$CIRRUS_REPO_OWNER"</b>
 " > tg.html
 TG_TEXT=$(< tg.html)
 telegram_message "$TG_TEXT"
